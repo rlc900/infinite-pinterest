@@ -1,7 +1,9 @@
-// import logo from './logo.svg';
 import {useState, useRef} from 'react'
 import data from './pins.json'
 import './App.css';
+import PinCard from './components/PinCard.js'
+import { Header, Loader} from 'semantic-ui-react'
+
 
 function App() {
 const [pins, setPins] = useState(data)
@@ -12,15 +14,13 @@ const page = useRef(null)
   let handleScroll = () => {
     // console.log(page)
     // debugger
-    console.log(page.current.scrollTop, page.current.clientHeight, page.current.scrollHeight)
     if (page.current.scrollTop + page.current.clientHeight >= page.current.scrollHeight) {
       setLoading(true)
-      // console.log('hello')
       setTimeout(getData, 1000)
     }
   }
 
-  console.log(loading)
+  // console.log(loading)
   const getData = () => {
     
     setLoading(false)
@@ -29,20 +29,18 @@ const page = useRef(null)
     })
   }
 
-  // change h1 to pinterestCard
+  // change h1 to pinterestCard ***DONE***
   // look into making respsonsive 
-  // change loading information 
+  // change loading information ***DONE***
   const allPins = pins.map((pin, index) => {
-      return <h1 
-      key={`${pin.id}-${index}`}>{pin.title}
-      
-      </h1>
+      return <PinCard key={`${pin.id}-${index}`} pin={pin} index={index} images={pin.images}/>
   })
 
   return (
     <div className="App" ref={page} onScroll={handleScroll}>
-        {allPins}
-        {loading && <p>Loading...</p>}
+      <Header as='h1'>Infinite PinterScroll!</Header>
+       {allPins}
+       {loading && <Loader active inline='centered'/>}
     </div>
   );
 }
