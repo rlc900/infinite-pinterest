@@ -2,7 +2,7 @@ import {useState, useRef} from 'react'
 import data from './pins.json'
 import './App.css';
 import PinCard from './components/PinCard.js'
-import { Header, Loader} from 'semantic-ui-react'
+import { Header, Loader } from 'semantic-ui-react'
 
 
 function App() {
@@ -16,13 +16,12 @@ const page = useRef(null)
     // debugger
     if (page.current.scrollTop + page.current.clientHeight >= page.current.scrollHeight) {
       setLoading(true)
-      setTimeout(getData, 1000)
+      setTimeout(getData, 10)
     }
   }
 
   // console.log(loading)
   const getData = () => {
-    
     setLoading(false)
     setPins((prevPins) => {
       return [...prevPins, ...data]
@@ -40,7 +39,8 @@ const page = useRef(null)
     <div className="App" ref={page} onScroll={handleScroll}>
       <Header as='h1'>Infinite PinterScroll!</Header>
        {allPins}
-       {loading && <Loader active inline='centered'/>}
+       {loading && 
+        <Loader active inline='centered' />}
     </div>
   );
 }
