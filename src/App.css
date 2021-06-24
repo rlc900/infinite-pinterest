@@ -4,13 +4,9 @@
   overflow: auto;
   margin: auto;
   width: 100%;
-  /* background-color: #89e5cd; */
-}
-
-body {
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #c1a0ff, #89e5cd);
   background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
+  animation: gradient 8s ease infinite;
 }
 
 @keyframes gradient {
@@ -23,4 +19,25 @@ body {
   100% {
     background-position: 0% 50%;
   }
+}
+
+h1.ui.header {
+  font-family: "Josefin Sans", sans-serif;
+  margin-top: 10px !important;
+}
+
+.ui.card > .content > .header:not(.ui),
+.ui.cards > .card > .content > .header:not(.ui) {
+  font-weight: 700;
+  font-size: 1.9em;
+  margin-top: -0.21425em;
+  line-height: 1.28571429em;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.ui.card > .content > .description,
+.ui.cards > .card > .content > .description {
+  clear: both;
+  color: rgba(0, 0, 0, 0.68);
+  font-family: "Josefin Sans", sans-serif;
 }

@@ -1,22 +1,34 @@
-import React from 'react';
-import { Card, Image } from 'semantic-ui-react'
+import React, {useState} from 'react';
+import { Card, Image, Icon, Button, Label } from 'semantic-ui-react'
 
 function PinCard({pin, images}) {
 
-    // console.log(images)
+    const [likes, setLikes] = useState(0)
+    
+
+    const handleClick = (e) => {
+        setLikes(likes + 1)
+    }
+
     return (
         <Card centered={true}>
             <Image src={images['136x136'].url} wrapped ui={false} />
-            <Card.Content>
+            <Card.Content className='content'>
                 <Card.Header>{pin.title}</Card.Header>
-                 <Card.Meta>
-                    <span className='date'>Joined in 2015</span>
-                 </Card.Meta>
-                <Card.Description>
-                 {pin.description}
-                </Card.Description>
-         </Card.Content>
-  </Card>
+                    <Button as='div' labelPosition='right' onClick={handleClick}>
+                    <Button icon>
+                    <Icon name='heart' />
+                          Like
+                     </Button>
+                    <Label as='a' basic pointing='left'>
+                         {likes}
+                    </Label>
+                    </Button>
+                <Card.Description className='desc'>
+                        {pin.description}
+                 </Card.Description>
+            </Card.Content>
+        </Card>
     );
 }
 
