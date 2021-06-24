@@ -6,18 +6,12 @@ A `React` application that allows users to scroll infinitely through Pinterest P
 - [Getting started](#getting-started)
 - [Technologies](#technologies)
 - [Installation](#installation)
-- [Start & Scroll](#start-and-scroll)
+- [Explore & Scroll](#explore-and-scroll)
 - [Resources](#resources)
 
 ## Getting Started
 For development, you will only need [Node.js](https://nodejs.org/en/) installed on your environement.
 
-## Technologies
-This web app makes use of the following technologies:
-
-- React.js
-- Semantic UI React
-- Customized CSS3 styling
 
 ## Installation
 - Clone [this repo](https://github.com/rlc900/infinite-pinterest.git) in your computers terminal.
@@ -29,7 +23,7 @@ This web app makes use of the following technologies:
  npm install
 ```
 
-## Start and Scroll
+## Explore and Scroll
 - Run `npm start` to start server.
  ```
 npm start
