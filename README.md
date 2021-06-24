@@ -3,9 +3,13 @@
 A `React` application that allows users to scroll infinitely through Pinterest Posts!
 
 ## Table of Contents
-[Technologies](#technologies)
+- [Getting started](#getting-started)
+- [Technologies](#technologies)
+- [Installation](#installation)
+- [Start & Scroll](#start-and-scroll)
+- [Resources](#resources)
 
-#Getting Started
+## Getting Started
 For development, you will only need [Node.js](https://nodejs.org/en/) installed on your environement.
 
 ## Technologies
@@ -27,10 +31,11 @@ This web app makes use of the following technologies:
 
 ## Start and Scroll
 - Run `npm start` to start server.
-- Once you're taken to the web app, ensure Frontend is running at http://localhost:3000.
-```
+ ```
 npm start
 ```
+- Once you're taken to the web app, ensure Frontend is running at http://localhost:3000.
+
 
 ## Languages and Tools
 **React**
