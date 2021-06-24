@@ -4,7 +4,6 @@ A `React` application that allows users to scroll infinitely through Pinterest P
 
 ## Table of Contents
 - [Getting started](#getting-started)
-- [Technologies](#technologies)
 - [Installation](#installation)
 - [Explore & Scroll](#explore-and-scroll)
 - [Resources](#resources)
