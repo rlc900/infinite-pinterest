@@ -17,8 +17,8 @@ For development, you will only need [Node.js](https://nodejs.org/en/) installed 
 - Run `npm install` to install all dependencies.
 
 ```
- git clone https://github.com/sruti/covid19-riskfactors-app.git
- cd covid19-riskfactors-app
+ git clone https://github.com/rlc900/infinite-pinterest.git
+ cd infinite-pinterest
  npm install
 ```
 
