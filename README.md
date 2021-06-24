@@ -2,7 +2,10 @@
 
 A `React` application that allows users to scroll infinitely through Pinterest Posts!
 
-## Getting Started
+## Table of Contents
+#getting-started
+
+#Getting Started
 For development, you will only need [Node.js](https://nodejs.org/en/) installed on your environement.
 
 ## Technologies
@@ -30,9 +33,9 @@ npm start
 ```
 
 ## Languages and Tools
-****React
+**React**
 - [Create React App](https://reactjs.org/docs/create-a-new-react-app.html)
-****Semantic UI 
+**Semantic UI**
 - [Semantic UI React](https://react.semantic-ui.com/)
 
 ## Resources
